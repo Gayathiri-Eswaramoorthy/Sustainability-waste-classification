@@ -63,3 +63,53 @@ Edunet-Foundation-Week1-sustainability-waste-classification/
 ├── results/              # Model outputs and plots
 ├── requirements.txt
 └── README.md
+
+Week 3 Progress
+
+Implemented Transfer Learning using MobileNetV2 to significantly improve model performance over the Week 2 CNN.
+
+Loaded the pre-trained MobileNetV2 (ImageNet weights) and added custom classification layers for the 10 waste categories.
+
+Fine-tuned model hyperparameters, including learning rate, dropout rate, batch size, and number of epochs to improve generalization.
+
+Achieved improved validation accuracy compared to the baseline CNN (~90–95%).
+
+Enhanced training stability using EarlyStopping and ModelCheckpoint callbacks.
+
+Visualized performance using updated accuracy/loss plots for MobileNetV2.
+
+Evaluated model using a detailed classification report and confusion matrix.
+
+Performed real-world testing by uploading unseen waste images and verifying predictions.
+
+Saved the optimized model as mobilenetv2_waste_classification_final.h5 for further deployment or inference.
+
+Updated notebooks and documentation to reflect Week 3 improvements.
+
+Updated Project Structure
+Edunet-Foundation-Week1-sustainability-waste-classification/
+│
+├── data/                                 # Dataset folders (train/validation)
+├── notebooks/
+│   ├── 01_data_exploration.ipynb         # Week 1
+│   ├── 02_model_training.ipynb           # Week 2 (CNN)
+│   └── 03_transfer_learning_and_testing.ipynb   # Week 3 (MobileNetV2)
+│
+├── models/
+│   ├── waste_classification_final.h5             # Week 2 model
+│   └── mobilenetv2_waste_classification_final.h5 # Week 3 model
+│
+├── results/                            # Accuracy plots, confusion matrices
+├── src/                                 # Optional scripts
+├── requirements.txt
+└── README.md
+
+Next Steps (Final Phase / Week 4 Plan)
+
+Prepare final presentation (PPT) summarizing project goals, methodology, results, and model performance.
+
+Demonstrate predictions using both test images and live inference.
+
+Finalize documentation and submit GitHub repository along with all milestones.
+
+(Optional) Convert model to TensorFlow Lite for mobile/web demo.
