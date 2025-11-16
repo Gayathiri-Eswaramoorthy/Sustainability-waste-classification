@@ -1,4 +1,4 @@
-tensorflow
+git commit -m "Week 2: Added CNN model notebook and README updates"tensorflow
 numpy
 pandas
 matplotlib
